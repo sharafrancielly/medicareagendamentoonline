@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <title>AGENDAMENTO</title>
+
+    <head>
+
+    <body>
+
+        <div class="banner">
+            <video src="img/video_preview_h264.mp4" autoplay loop muted></video>
+
+            <div class="content">
+                  <h1>AGENDAMENTO DE CONSULTA</h1>
+
+                 <form action="#" method="post">
+                    <label for="nome">Nome do paciente:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <p class="hint">Campo obrigatório</p>
+         
+            
+                 <label for="email">E-mail:</label>
+                 <input type="email" id="email" name="email" required>
+            
+
+                 <label for="telefone">Telefone:</label>
+                 <input type="tel" id="telefone" name="telefone" pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$"
+                 placeholder="(99) 99999-9999" title="Ex: (99) 99999-9999" required>
+
+                 <label for="idade">Idade:</label>
+                 <input type="number" id="idade" name="idade" min="0" max="120" required>
+
+                 <label for="data">Data da consulta:</label>
+                 <input type="date" id="data" name="data" required>
+
+                 <label for="hora">Horário:</label>
+                 <input type="time" id="hora" name="hora" placeholder="Ex: 14:30" required>
+
+                 <label for="especialidade">Especialidade:</label>
+                 <select id="especialidade" name="especialidade" required>
+                    <option value="">Selecione a especialidade</option>
+                    <option value="clinica_geral">Clínica Geral</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="pediatria">Pediatria</option>
+                 </select>
+
+                <div class="radio-group">
+                <label>Conveniado?</label>
+                <input type="radio" id="conveniado_sim" name="conveniado" value="sim" required>
+                <label for="conveniado_sim">Sim</label>
+
+                <input type="radio" id="conveniado_nao" name="conveniado" value="nao">
+                <label for="conveniado_nao">Não</label>
+
+
+
+                 <div class="checkbox-group">
+                <label>Serviços adicionais:</label><br>
+                <input type="checkbox" id="servico_retorno" name="servico[]" value="retorno">
+                <label for="servico_retorno">Retorno</label>
+
+                <input type="checkbox" id="servico_exames" name="servico[]" value="exames">
+                <label for="servico_exames">Exames</label>
+
+                <input type="checkbox" id="servico_teleconsulta" name="servico[]" value="teleconsulta">
+                <label for="servico_teleconsulta">Teleconsulta</label>
+
+                <input type="checkbox" id="servico_receita" name="servico[]" value="receita_medica">
+                <label for="servico_receita">Receita Médica</label>
+
+                <label for="sintomas">Sintomas relatados:</label>
+                <textarea id="sintomas" name="sintomas" rows="5"
+                    placeholder="Descrição dos sintomas principais"></textarea>
+                <p class="hint">Descrição dos sintomas principais</p>
+
+
+                <label for="médico_responsável">Médico Responsável:</label>
+                 <select id="médico_responsável" name="médico_responsável" required>
+                    <option value="">Selecione o Médico Responsável</option>
+                    <option value="clinica_geral">Dra. Andressa (Clínica Geral)</option>
+                    <option value="cardiologia">Dr. Fernandes (Cardiologia)</option>
+                    <option value="dermatologia">Dra. Emilia (Dermatologia)</option>
+                    <option value="odontologia">Dra. Yang (Odontologia)</option>
+                    <option value="pediatria">Dr. Gustavo (Pediatria)</option>
+                 </select>
+
+                <button type="submit" id="btnSalvar">Salvar Agendamento</button>
+            </div>
+
+         </form>
+        </div>
+<script src="script.js"></script>
+    </body>
+
+</html>

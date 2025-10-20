@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MEDICARE LOGIN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+
+
+</head>
+
+<body>
+    <script src="assets/js/main.js"></script>
+    <main class="stage" role="main" aria-labelledby="welcome-title">
+        <section class="card">
+            <div class="greeting">
+                <div class="eyebrow">ㅤ S e j a ㅤ b e m - v i n d oㅤ ao</div>
+
+                <h1 id="welcome-title">Agendamento<span class="name-pill">MÉDICO</span>
+                </h1>
+
+                <p class="lead">
+                    Diga adeus à espera telefônica e às agendas complicadas!
+                    Com a nossa plataforma de agendamento online, você encontra o profissional de saúde
+                    ideal e marca sua consulta em poucos cliques, a qualquer hora e em qualquer lugar.
+                </p>
+                <a class="btn" href="medicos.html" role="button">PROFISSIONAIS MEDICARE ✨></a>
+            </div>
+            </div>
+        </section>
+    </main>
+
+                      <img height="150px" width="150px " src="img/logotipo.png">
+                
+
+    <div class="wave-wrap" aria-hidden="true">
+        <svg class="wave" viewBox="0 0 1200 200" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="rgb(19, 57, 133) 0.28"></stop>
+                    <stop offset="50%" stop-color="#133985" stop-opacity="0.18"></stop>
+                    <stop offset="100%" stop-color="#030030" stop-opacity="0.14"></stop>
+                </linearGradient>
+            </defs>
+            <path d="M0,80 C150,200 350,0 600,80 C850,160 1050,40 1200,80 L1200,200 L0,200 Z" fill="url(#g1)"></path>
+            <path d="M0,100 C150,20 350,200 600,100 C850,0 1050,160 1200,100 L1200,200 L0,200 Z"
+                fill="rgba(255,255,255,0.03)"></path>
+
+        </svg>
+    </div>
+
+
+    <div class="container">
+        <h1>LOGIN </h1><br>
+        <form id="loginForm">
+            <label for="usuario">Usuário:</label><br>
+            <input type="text" id="usuario" name="usuario" required/><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required/><br>
+
+            <button type="submit"> entrar </button>
+            <p id="msgErro" class="error-msg"></p>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
